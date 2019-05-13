@@ -1148,7 +1148,8 @@ addPolylines <- function(
   )))
   pgons <- derivePolygons(data, lng, lat, missing(lng), missing(lat), "addPolylines")
   invokeMethod(map, data, "addPolylines", pgons, layerId, group, options,
-               popup, popupOptions, safeLabel(label, data), labelOptions, highlightOptions) %>%
+               popup, popupOptions, safeLabel(label, data), labelOptions,
+               highlightOptions, getCrosstalkOptions(data)) %>%
     expandLimitsBbox(pgons)
 }
 

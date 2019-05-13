@@ -153,7 +153,7 @@ assert(
 )
 mockSession$.flush()
 # nolint start
-expected <- list(structure(list(type = "leaflet-calls", message = structure("{\"id\":\"map\",\"calls\":[{\"dependencies\":[],\"method\":\"addPolygons\",\"args\":[[[[{\"lng\":[1,2,3,4,5],\"lat\":[1,2,3,4,5]}]]],null,null,{\"interactive\":true,\"className\":\"\",\"stroke\":true,\"color\":\"#03F\",\"weight\":5,\"opacity\":0.5,\"fill\":true,\"fillColor\":\"#03F\",\"fillOpacity\":0.2,\"smoothFactor\":1,\"noClip\":false},null,null,null,{\"interactive\":false,\"permanent\":false,\"direction\":\"auto\",\"opacity\":1,\"offset\":[0,0],\"textsize\":\"10px\",\"textOnly\":false,\"className\":\"\",\"sticky\":true},null]}]}", class = "json")), .Names = c("type",
+expected <- list(structure(list(type = "leaflet-calls", message = structure("{\"id\":\"map\",\"calls\":[{\"dependencies\":[],\"method\":\"addPolygons\",\"args\":[[[[{\"lng\":[1,2,3,4,5],\"lat\":[1,2,3,4,5]}]]],null,null,{\"interactive\":true,\"className\":\"\",\"stroke\":true,\"color\":\"#03F\",\"weight\":5,\"opacity\":0.5,\"fill\":true,\"fillColor\":\"#03F\",\"fillOpacity\":0.2,\"smoothFactor\":1,\"noClip\":false},null,null,null,null{\"interactive\":false,\"permanent\":false,\"direction\":\"auto\",\"opacity\":1,\"offset\":[0,0],\"textsize\":\"10px\",\"textOnly\":false,\"className\":\"\",\"sticky\":true},null]}]}", class = "json")), .Names = c("type",
 "message")))
 # nolint end
 
